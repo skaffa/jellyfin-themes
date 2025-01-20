@@ -1,0 +1,178 @@
+ /* start editor */
+#txtCustomCss {
+    max-height: 85vh !important;
+    overflow-y: auto;
+}
+
+#dashboardGeneralPage > div > div > form > div:nth-child(9) {
+position: fixed;
+top: 0;
+right: 0;
+padding: 7em;
+}
+/* end editor */
+
+.btnForgotPassword,
+body:has(#loginPage) div.skinHeader  {
+                display: none !important;
+}
+
+body:has(#loginPage) {
+        overflow: hidden;
+        user-select: none;
+}
+
+#loginPage {
+                 background-color: transparent !important;
+                background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600'><rect x='0' y='0' width='900' height='600' fill='%23030303'/><g transform='translate(900, 0)'><path d='M0 335C-41.1 324.9 -82.1 314.8 -125.5 303C-168.9 291.2 -214.6 277.8 -248.6 248.6C-282.6 219.4 -304.9 174.5 -315 130.5C-325.2 86.5 -323.1 43.2 -321 0L0 0Z' fill='%234400cd'/></g><g transform='translate(0, 600)'><path d='M0 -351.5C43.5 -337.6 86.9 -323.7 126.3 -304.9C165.6 -286.1 200.8 -262.5 233.3 -233.3C265.9 -204.2 295.7 -169.5 313.2 -129.7C330.7 -89.9 335.8 -45 341 0L0 0Z' fill='%234400cd'/></g></svg>");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.manualLoginForm {
+                padding: 2em;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 90vw;
+                max-height: 90vh;
+                min-height: fit-content;
+                min-width: fit-content;
+                height: 35em;
+                width: 15em;
+                border-radius: 8px;
+}
+
+
+.manualLoginForm .sectionTitle{
+                visibility: hidden;
+                position: relative;
+                width: 100%;
+                margin-bottom: 2em;
+                text-align: center;
+
+}
+
+#loginPage .manualLoginForm .sectionTitle:after {
+                content: 'Log in to sKyte';
+                visibility: visible;
+                display: flex;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                flex-direction: row;
+                justify-content: center;
+                font-weight: bold;
+                background-color: #4400cd;
+                color: black;
+                padding: .3em;
+                /*clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);*/
+                border-radius: 8px 4px 8px 4px
+}
+
+
+#loginPage .inputContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+}
+
+
+
+#loginPage input.emby-input {
+        border-style: none !important;
+        background: none;
+}
+
+#loginPage .inputContainer:after {
+        content: '';
+               position: absolute;
+               display: block !important;
+               width: 100%;
+               height: .1em;
+               background: #4400cd;
+               transition: .12s ease-in-out;
+               bottom: -.1em;
+}
+
+#loginPage .inputContainer:has(input:focus):after {
+           bottom: -.2em;
+           height: .2em;
+           border-radius: 24px;
+}
+
+#loginPage .inputLabel {
+  background-size: 80% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 2em;
+  height: 2em;
+  overflow: hidden;
+ color: #00000000;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%234400cd'><path d='M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z'/></svg>") !important;
+
+
+}
+
+
+#loginPage > div > form > div:nth-child(3) > label {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%234400cd'><path d='M280-400q-33 0-56.5-23.5T200-480q0-33 23.5-56.5T280-560q33 0 56.5 23.5T360-480q0 33-23.5 56.5T280-400Zm0 160q-100 0-170-70T40-480q0-100 70-170t170-70q67 0 121.5 33t86.5 87h352l120 120-180 180-80-60-80 60-85-60h-47q-32 54-86.5 87T280-240Zm0-80q56 0 98.5-34t56.5-86h125l58 41 82-61 71 55 75-75-40-40H435q-14-52-56.5-86T280-640q-66 0-113 47t-47 113q0 66 47 113t113 47Z'/></svg>") !important;
+
+}
+
+
+
+
+.manualLoginForm button[type="submit"] {
+               background-color: #4400cd22;
+               border-width: 2px;
+               border-style: solid;
+               border-color: #4400cd;
+border-radius: 3px;
+margin-top: 2em;
+opacity: 1;
+}
+
+.manualLoginForm:has(input[invalid]) button[type="submit"] {
+    opacity: 0 !important;
+}
+
+.manualLoginForm button[type="submit"]:hover {
+            background: #4400cd;
+}
+
+#loginPage .emby-checkbox:checked + span + .checkboxOutline {
+           border-color: #4400cd;
+}
+
+#loginPage .checkboxIcon {
+           background: #4400cd !important;
+           border-color: #4400cd;
+}
+
+#loginPage .checkboxContainer {
+display: flex;
+flex-direction: row;
+align-items: center !important;
+}
+
+#loginPage .checkboxOutline {
+           border-color: #4400cd;
+}
+
+
+#loginPage .inputContainer:has(input:blank):before {
+content: 'User';
+color: red;
+position: absolute;
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+margin-left: 1.9em;
+font-size: 1.1em;
+}
