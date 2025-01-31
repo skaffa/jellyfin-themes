@@ -181,10 +181,10 @@ font-size: 1.1em;
 
 /* Input Placeholders */
 #loginPage .inputContainer:has(input:[type="text"]) {
-       background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='120px'><text x='0' y='15' fill='gray' font-size='15'>User</text></svg>");
+       background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='120px'><text x='0' y='15' fill='gray' font-size='15' font-family='Arial, sans-serif'>User</text></svg>");
 }
 #loginPage .inputContainer:has(input:[type="password"]) {
-       background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='120px'><text x='0' y='15' fill='gray' font-size='15'>Pasword</text></svg>");
+       background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='120px'><text x='0' y='15' fill='gray' font-size='15' font-family='Arial, sans-serif'>Pasword</text></svg>");
 }
 
 #loginPage .inputContainer:has(input[type="text"]),
